@@ -1,0 +1,29 @@
+In the disassembly of backup.c,
+
+the variables unsigned i, len and char buffer[3000] is pushed to the stack by the instruction
+
+sub    $0xbd8,%esp	
+
+which sets aside 3032 bytes of memory. Just beside this chunk of memory lies the Old EBP 
+and the return address RET. 
+
+Since we need address of buffer, buffer is 3024 bytes as len and i are 8 bytes total.
+
+
+Hence in gdb, we can find the address of the buffer 
+==
+print $ebp - 0xbd8
+
+result: (void *) 0xffbfd060
+==
+
+
+Hence we've found the start address of the buffer!
+
+There will be a difference in address outside of gdb of a few bytes due to environment variables etc.
+
+
+We need to write past the unsigned i and len variables. Hence we need to write more than 3032 bytes into the buffer to be safe. We could use 3064 bytes arbitrarily.
+
+
+Pad NOPs into the front of the target address just to be safe 
