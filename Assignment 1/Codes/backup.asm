@@ -1,5 +1,3 @@
-backup:     file format elf32-i386
-
 Disassembly of section .init:
 
 080487f0 <_init>:
