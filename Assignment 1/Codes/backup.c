@@ -240,8 +240,9 @@ int main(int argc, char* argv[])
 
   path_real = realpath(path, NULL);
 
+  /*Time of Check*/
   if (path_real != NULL && strstr(path_real, forbidden) == path_real) {
-    permissionsError = 1;
+    permissions   = 1;
     strcpy(errorMsg, "Not allowed to access target/source: ");
     strncpy(errorMsg+strlen(errorMsg), path, sizeof(errorMsg)-strlen(errorMsg));
   }
@@ -289,6 +290,7 @@ int main(int argc, char* argv[])
     return 1;
   }
 
+  /*Time of Use*/
   // perform actual backup/restore operation
   if (copyFile(src, dst) < 0) {
     return 1;
