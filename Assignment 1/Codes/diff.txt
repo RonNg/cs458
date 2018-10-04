@@ -1,0 +1,52 @@
+user@cs458-uml:~$ clear
+user@cs458-uml:~$ diff backup backupV2
+
+
+
+791,792d790
+< 8d 9d 60 ff ff ff       lea    0xffffff60(%ebp),%ebx
+< 83 c4 f4                add    $0xfffffff4,%esp
+795,800c793
+< e8 99 f3 ff ff          call   8048918 <strlen@plt>
+< 83 c4 10                add    $0x10,%esp
+< 89 c0                   mov    %eax,%eax
+< 8d 14 18                lea    (%eax,%ebx,1),%edx
+< 52                      push   %edx
+< e8 5b f4 ff ff          call   80489e8 <strncpy@plt>
+---
+> e8 a6 f2 ff ff          call   804884c <strncat@plt>
+
+
+
+
+< eb 5a                   jmp    8049614 <main+0x504>
+< 8d b6 00 00 00 00       lea    0x0(%esi),%esi
+---
+> eb 5d                   jmp    8049630 <main+0x4f0>
+
+
+
+826c818,819
+< eb 2e                   jmp    8049614 <main+0x504>
+---
+> eb 37                   jmp    8049630 <main+0x4f0>
+> 8d b4 26 00 00 00 00    lea    0x0(%esi),%esi
+
+
+838,840c831
+< eb 09                   jmp    8049614 <main+0x504>
+< 90                      nop
+< 8d 74 26 00             lea    0x0(%esi),%esi
+---
+> eb 0b                   jmp    8049630 <main+0x4f0>
+
+842c833,834
+< eb 00                   jmp    8049614 <main+0x504>
+---
+> eb 07                   jmp    8049630 <main+0x4f0>
+> 8d b4 26 00 00 00 00    lea    0x0(%esi),%esi
+848a841,844
+> 90                      nop
+> 90                      nop
+> 90                      nop
+> 90                      nop

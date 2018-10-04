@@ -238,11 +238,12 @@ int main(int argc, char* argv[])
   strcpy(path_stripped, path);
   strip_dots(path_stripped);
 
+  //resolve symbolic links
   path_real = realpath(path, NULL);
 
   /*Time of Check*/
   if (path_real != NULL && strstr(path_real, forbidden) == path_real) {
-    permissions   = 1;
+    permissionsError  = 1;
     strcpy(errorMsg, "Not allowed to access target/source: ");
     strncpy(errorMsg+strlen(errorMsg), path, sizeof(errorMsg)-strlen(errorMsg));
   }
@@ -282,6 +283,8 @@ int main(int argc, char* argv[])
       permissionsError = 1;
       strcpy(errorMsg, "Not your file: ");
       strncpy(errorMsg+strlen(errorMsg), path, sizeof(errorMsg)-strlen(errorMsg));
+	  
+	  //strncat(errorMsg, , sizeof(errorMsg) - strlen(errorMsg)) //assumed backupV2 code
     }
   }
 

