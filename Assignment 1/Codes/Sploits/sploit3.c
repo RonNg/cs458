@@ -85,4 +85,6 @@ int main(int argc, char **argv)
 	}
 	//Should get root access here. Login to hacker
 	system("su hacker");
+	
+	reeturn 0;
 }
