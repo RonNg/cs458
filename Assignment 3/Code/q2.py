@@ -36,6 +36,3 @@ with open('p2_encrypted', 'r') as file:
         encrypted.append(int(row.strip('\r\n')))
 
 print (encrypted)
-
-
-for

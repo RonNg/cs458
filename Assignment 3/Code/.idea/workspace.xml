@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1ab1972-b9cf-4d9d-88d2-f705ae4210a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/q2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xor_files.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputCopy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q2.py" beforeDir="false" afterPath="$PROJECT_DIR$/q2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/c++/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/c++/p1_attack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/c++/p2_attack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/c/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/c/p1_attack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/c/p2_attack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/go/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/go/src/p1_attack/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/go/src/p2_attack/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/java/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/java/P1_ATTACK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/java/P2_ATTACK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/java/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/java/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/perl/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/perl/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/php/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/php/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/python_2/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/python_2/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/python_3/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/python_3/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/ruby/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/ruby/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/tcl/p1_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../a3_skeletons/tcl/p2_attack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p1_background.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p1_encrypted.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../p2_encrypted" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,28 +48,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/q1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding>
-                <element signature="e#167#329#0" />
-                <element signature="e#225#305#0" />
-                <element signature="e#385#891#0" />
-                <element signature="e#514#659#0" />
-                <element signature="e#595#659#0" />
-                <element signature="e#719#870#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/q2.py">
+        <entry file="file://$PROJECT_DIR$/xor_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+            <state relative-caret-position="516">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -54,12 +69,12 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sort</find>
-      <find>sys.arg</find>
       <find>sorted</find>
       <find>ordereddic</find>
       <find>ordereddict</find>
       <find>getnumberof</find>
       <find>getnumberofentries</find>
+      <find>sys.arg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -69,16 +84,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/q1 (copy).py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/q1.py" />
         <option value="$PROJECT_DIR$/q2.py" />
+        <option value="$PROJECT_DIR$/q1.py" />
+        <option value="$PROJECT_DIR$/venv/test.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/xor_files.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="99" />
-    <option name="width" value="790" />
-    <option name="height" value="654" />
+    <option name="y" value="25" />
+    <option name="width" value="800" />
+    <option name="height" value="875" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -86,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,7 +133,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.q2">
+  <component name="RunManager" selected="Python.test (1)">
     <configuration name="q1 (copy)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,7 +197,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,8 +218,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
+      <module name="Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xor_files.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.q2" />
         <item itemvalue="Python.q1 (copy)" />
         <item itemvalue="Python.q1" />
@@ -225,7 +264,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1600" height="875" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.10970197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.10970197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.502" side_tool="true" weight="0.10970197" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -246,25 +285,22 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/q1 (copy).py" />
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/venv/test.py" />
+    <entry file="file://$PROJECT_DIR$/q2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="e#88#250#0" />
-            <element signature="e#146#226#0" />
-          </folding>
+        <state relative-caret-position="334">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/q1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state>
+          <caret selection-end-column="22" />
           <folding>
+            <element signature="e#24#34#0" expanded="true" />
             <element signature="e#167#329#0" />
             <element signature="e#225#305#0" />
-            <element signature="e#385#891#0" />
             <element signature="e#514#659#0" />
             <element signature="e#595#659#0" />
             <element signature="e#719#870#0" />
@@ -272,10 +308,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/q2.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xor_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
